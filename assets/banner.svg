@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="t d">
+<title id="t">MohammadHossein Saeidi</title>
+<desc id="d">A dark graphite scene of connected, precision-machined technology modules (an infrastructure rack, a compute core and a vision sensor) lit with a violet rim light, with signals pulsing along circuit traces between them.</desc>
+<defs>
+  <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#34343F"/><stop offset=".55" stop-color="#23232C"/><stop offset="1" stop-color="#1A1A21"/>
+  </linearGradient>
+  <linearGradient id="gTopV" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#3A3550"/><stop offset=".6" stop-color="#25232F"/><stop offset="1" stop-color="#1B1A22"/>
+  </linearGradient>
+  <linearGradient id="gLeft" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#17171D"/><stop offset="1" stop-color="#0E0E12"/>
+  </linearGradient>
+  <linearGradient id="gRight" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#24242D"/><stop offset=".35" stop-color="#2E2E39"/>
+    <stop offset=".42" stop-color="#1D1D25"/><stop offset="1" stop-color="#141419"/>
+  </linearGradient>
+  <linearGradient id="gRimV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#8B6CFF" stop-opacity=".9"/><stop offset="1" stop-color="#8B6CFF" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="1.6" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="22"/>
+  </filter>
+  <radialGradient id="gBg" cx=".58" cy=".55" r=".7">
+    <stop offset="0" stop-color="#17171E"/><stop offset="1" stop-color="#0B0B0F"/>
+  </radialGradient>
+  <radialGradient id="gHalo" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#8B6CFF" stop-opacity=".55"/><stop offset="1" stop-color="#8B6CFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="gLens" cx=".35" cy=".35" r=".8">
+    <stop offset="0" stop-color="#4B3F8F"/><stop offset=".5" stop-color="#1A1630"/><stop offset="1" stop-color="#050507"/>
+  </radialGradient>
+  <radialGradient id="gFade" cx=".58" cy=".6" r=".55">
+    <stop offset="0" stop-color="#fff"/><stop offset=".7" stop-color="#fff" stop-opacity=".4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <mask id="mFade"><rect width="1200" height="420" fill="url(#gFade)"/></mask>
+  <linearGradient id="gVignette" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0B0B0F" stop-opacity="0"/><stop offset=".75" stop-color="#0B0B0F" stop-opacity="0"/><stop offset="1" stop-color="#0B0B0F" stop-opacity=".9"/>
+  </linearGradient>
+  <clipPath id="frame"><rect width="1200" height="420" rx="18"/></clipPath>
+</defs>
+<style>
+    .grid path { stroke: #A2A0B3; stroke-width: .6; opacity: .07; fill: none; }
+    .traces path { stroke: #2A2A36; stroke-width: 2; fill: none; stroke-linejoin: round; }
+    .traces .pulse { stroke-width: 2.2; stroke-dasharray: 6 94; stroke-linecap: round;
+                      animation: flow 5.5s linear infinite; filter: url(#glow); }
+    .p1 { animation-delay: -1.2s !important; } .p2 { animation-delay: -2.7s !important; animation-duration: 7s !important; }
+    .p3 { animation-delay: -3.9s !important; } .p4 { animation-delay: -.6s !important; animation-duration: 6.5s !important; }
+    .p5 { animation-delay: -4.4s !important; animation-duration: 8s !important; }
+    @keyframes flow { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+    .pads ellipse { fill: #3A3A48; }
+    .float { animation: float 7s ease-in-out infinite; }
+    .float2 { animation: float 9s ease-in-out -3s infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .rim { animation: rim 6s ease-in-out infinite; }
+    @keyframes rim { 0%, 100% { stroke-opacity: .65; } 50% { stroke-opacity: 1; } }
+    .cell { fill: #2A2738; animation: cell 4.8s ease-in-out infinite; }
+    .c1 { animation-delay: -1s; } .c2 { animation-delay: -2s; } .c3 { animation-delay: -3s; } .c4 { animation-delay: -4s; }
+    @keyframes cell { 0%, 70%, 100% { fill: #2A2738; } 82% { fill: #8B6CFF; } }
+    .led { fill: #8B6CFF; animation: led 3s steps(1) infinite; }
+    .l1 { animation-delay: -1s; } .l2 { animation-delay: -2s; fill: #72D7E8; }
+    @keyframes led { 0%, 60% { opacity: .25; } 61%, 100% { opacity: 1; } }
+    .halo { animation: halo 8s ease-in-out infinite; }
+    @keyframes halo { 0%, 100% { opacity: .32; } 50% { opacity: .5; } }
+    .scan { animation: scan 4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes scan { 0%, 100% { transform: scale(1); opacity: .2; } 50% { transform: scale(1.35); opacity: .6; } }
+    .dust { fill: #A2A0B3; animation: dust 10s ease-in-out infinite; }
+    .d1 { animation-delay: -2.5s; } .d2 { animation-delay: -5s; } .d3 { animation-delay: -7.5s; }
+    @keyframes dust { 0%, 100% { opacity: .08; transform: translateY(0); } 50% { opacity: .45; transform: translateY(-8px); } }
+    .label { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; fill: #A2A0B3; letter-spacing: .14em; }
+    .label b { fill: #8B6CFF; font-weight: 500; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+<g clip-path="url(#frame)">
+  <rect width="1200" height="420" fill="url(#gBg)"/>
+  <ellipse cx="715" cy="192" rx="330" ry="150" fill="url(#gHalo)" class="halo" filter="url(#soft)"/>
+  <g class="grid" mask="url(#mFade)"><path d="M715.0,-378.0 L-254.9,182.0"/><path d="M715.0,-378.0 L1684.9,182.0"/><path d="M749.6,-358.0 L-220.3,202.0"/><path d="M680.4,-358.0 L1650.3,202.0"/><path d="M784.3,-338.0 L-185.7,222.0"/><path d="M645.7,-338.0 L1615.7,222.0"/><path d="M818.9,-318.0 L-151.0,242.0"/><path d="M611.1,-318.0 L1581.0,242.0"/><path d="M853.6,-298.0 L-116.4,262.0"/><path d="M576.4,-298.0 L1546.4,262.0"/><path d="M888.2,-278.0 L-81.7,282.0"/><path d="M541.8,-278.0 L1511.7,282.0"/><path d="M922.8,-258.0 L-47.1,302.0"/><path d="M507.2,-258.0 L1477.1,302.0"/><path d="M957.5,-238.0 L-12.5,322.0"/><path d="M472.5,-238.0 L1442.5,322.0"/><path d="M992.1,-218.0 L22.2,342.0"/><path d="M437.9,-218.0 L1407.8,342.0"/><path d="M1026.8,-198.0 L56.8,362.0"/><path d="M403.2,-198.0 L1373.2,362.0"/><path d="M1061.4,-178.0 L91.5,382.0"/><path d="M368.6,-178.0 L1338.5,382.0"/><path d="M1096.1,-158.0 L126.1,402.0"/><path d="M333.9,-158.0 L1303.9,402.0"/><path d="M1130.7,-138.0 L160.7,422.0"/><path d="M299.3,-138.0 L1269.3,422.0"/><path d="M1165.3,-118.0 L195.4,442.0"/><path d="M264.7,-118.0 L1234.6,442.0"/><path d="M1200.0,-98.0 L230.0,462.0"/><path d="M230.0,-98.0 L1200.0,462.0"/><path d="M1234.6,-78.0 L264.7,482.0"/><path d="M195.4,-78.0 L1165.3,482.0"/><path d="M1269.3,-58.0 L299.3,502.0"/><path d="M160.7,-58.0 L1130.7,502.0"/><path d="M1303.9,-38.0 L333.9,522.0"/><path d="M126.1,-38.0 L1096.1,522.0"/><path d="M1338.5,-18.0 L368.6,542.0"/><path d="M91.5,-18.0 L1061.4,542.0"/><path d="M1373.2,2.0 L403.2,562.0"/><path d="M56.8,2.0 L1026.8,562.0"/><path d="M1407.8,22.0 L437.9,582.0"/><path d="M22.2,22.0 L992.1,582.0"/><path d="M1442.5,42.0 L472.5,602.0"/><path d="M-12.5,42.0 L957.5,602.0"/><path d="M1477.1,62.0 L507.2,622.0"/><path d="M-47.1,62.0 L922.8,622.0"/><path d="M1511.7,82.0 L541.8,642.0"/><path d="M-81.7,82.0 L888.2,642.0"/><path d="M1546.4,102.0 L576.4,662.0"/><path d="M-116.4,102.0 L853.6,662.0"/><path d="M1581.0,122.0 L611.1,682.0"/><path d="M-151.0,122.0 L818.9,682.0"/><path d="M1615.7,142.0 L645.7,702.0"/><path d="M-185.7,142.0 L784.3,702.0"/><path d="M1650.3,162.0 L680.4,722.0"/><path d="M-220.3,162.0 L749.6,722.0"/><path d="M1684.9,182.0 L715.0,742.0"/><path d="M-254.9,182.0 L715.0,742.0"/></g>
+  <g class="traces"><path d="M654.4,217.0 L619.7,237.0 L602.4,227.0 L567.8,247.0"/><path d="M775.6,217.0 L818.9,242.0 L818.9,242.0 L853.6,262.0"/><path d="M489.8,252.0 L411.9,207.0 L507.2,152.0 L441.3,114.0"/><path d="M775.6,147.0 L844.9,107.0 L890.8,133.5 L989.5,76.5"/><path d="M849.2,309.5 L788.6,344.5 L831.0,369.0 L787.7,394.0"/><path d="M524.5,322.0 L602.4,367.0 L650.9,339.0 L746.2,394.0"/><path d="M654.4,217.0 L619.7,237.0 L602.4,227.0 L567.8,247.0" stroke="#8B6CFF" class="pulse p0" pathLength="100"/><path d="M775.6,217.0 L818.9,242.0 L818.9,242.0 L853.6,262.0" stroke="#8B6CFF" class="pulse p1" pathLength="100"/><path d="M489.8,252.0 L411.9,207.0 L507.2,152.0 L441.3,114.0" stroke="#8B6CFF" class="pulse p2" pathLength="100"/><path d="M775.6,147.0 L844.9,107.0 L890.8,133.5 L989.5,76.5" stroke="#8B6CFF" class="pulse p3" pathLength="100"/><path d="M849.2,309.5 L788.6,344.5 L831.0,369.0 L787.7,394.0" stroke="#72D7E8" class="pulse p4" pathLength="100"/><path d="M524.5,322.0 L602.4,367.0 L650.9,339.0 L746.2,394.0" stroke="#8B6CFF" class="pulse p5" pathLength="100"/></g>
+  <g class="pads"><ellipse cx="654.4" cy="217.0" rx="3.4" ry="2"/><ellipse cx="567.8" cy="247.0" rx="3.4" ry="2"/><ellipse cx="775.6" cy="217.0" rx="3.4" ry="2"/><ellipse cx="853.6" cy="262.0" rx="3.4" ry="2"/><ellipse cx="489.8" cy="252.0" rx="3.4" ry="2"/><ellipse cx="441.3" cy="114.0" rx="3.4" ry="2"/><ellipse cx="775.6" cy="147.0" rx="3.4" ry="2"/><ellipse cx="989.5" cy="76.5" rx="3.4" ry="2"/><ellipse cx="849.2" cy="309.5" rx="3.4" ry="2"/><ellipse cx="787.7" cy="394.0" rx="3.4" ry="2"/><ellipse cx="524.5" cy="322.0" rx="3.4" ry="2"/><ellipse cx="746.2" cy="394.0" rx="3.4" ry="2"/></g>
+  <g class="float2"><polygon points="424.0,100.0 446.5,113.0 446.5,91.0 424.0,78.0" fill="url(#gLeft)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="469.0,100.0 446.5,113.0 446.5,91.0 469.0,78.0" fill="url(#gRight)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="446.5,65.0 469.0,78.0 446.5,91.0 424.0,78.0" fill="url(#gTop)" stroke="#3A3A48" stroke-width="0.8"/>
+<path d="M446.5,113.0 L446.5,91.0" stroke="#4A4A5C" stroke-width="0.8"/>
+<path d="M424.0,78.0 L446.5,65.0 L469.0,78.0" fill="none" stroke="#8B6CFF" stroke-width="1.4" stroke-linecap="round" filter="url(#glow)" class="rim"/>
+<path d="M469.0,78.0 L469.0,96.7" fill="none" stroke="url(#gRimV)" stroke-width="1.2"/><polygon points="978.3,70.0 1000.8,83.0 1000.8,61.0 978.3,48.0" fill="url(#gLeft)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="1023.3,70.0 1000.8,83.0 1000.8,61.0 1023.3,48.0" fill="url(#gRight)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="1000.8,35.0 1023.3,48.0 1000.8,61.0 978.3,48.0" fill="url(#gTop)" stroke="#3A3A48" stroke-width="0.8"/>
+<path d="M1000.8,83.0 L1000.8,61.0" stroke="#4A4A5C" stroke-width="0.8"/>
+<path d="M978.3,48.0 L1000.8,35.0 L1023.3,48.0" fill="none" stroke="#8B6CFF" stroke-width="1.4" stroke-linecap="round" filter="url(#glow)" class="rim"/>
+<path d="M1023.3,48.0 L1023.3,66.7" fill="none" stroke="url(#gRimV)" stroke-width="1.2"/><polygon points="744.4,395.0 767.0,408.0 767.0,386.0 744.4,373.0" fill="url(#gLeft)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="789.5,395.0 767.0,408.0 767.0,386.0 789.5,373.0" fill="url(#gRight)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="767.0,360.0 789.5,373.0 767.0,386.0 744.4,373.0" fill="url(#gTop)" stroke="#3A3A48" stroke-width="0.8"/>
+<path d="M767.0,408.0 L767.0,386.0" stroke="#4A4A5C" stroke-width="0.8"/>
+<path d="M744.4,373.0 L767.0,360.0 L789.5,373.0" fill="none" stroke="#8B6CFF" stroke-width="1.4" stroke-linecap="round" filter="url(#glow)" class="rim"/>
+<path d="M789.5,373.0 L789.5,391.7" fill="none" stroke="url(#gRimV)" stroke-width="1.2"/></g>
+  <g><polygon points="446.5,277.0 515.8,317.0 515.8,189.0 446.5,149.0" fill="url(#gLeft)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="602.4,267.0 515.8,317.0 515.8,189.0 602.4,139.0" fill="url(#gRight)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="533.1,99.0 602.4,139.0 515.8,189.0 446.5,149.0" fill="url(#gTop)" stroke="#3A3A48" stroke-width="0.8"/>
+<path d="M515.8,317.0 L515.8,189.0" stroke="#4A4A5C" stroke-width="0.8"/>
+<path d="M446.5,149.0 L533.1,99.0 L602.4,139.0" fill="none" stroke="#8B6CFF" stroke-width="1.4" stroke-linecap="round" filter="url(#glow)" class="rim"/>
+<path d="M602.4,139.0 L602.4,247.8" fill="none" stroke="url(#gRimV)" stroke-width="1.2"/><path d="M455.2,264.0 L496.8,288.0" stroke="#2E2E3A" stroke-width="5" stroke-linecap="round"/><circle cx="505.4" cy="293.0" r="1.6" class="led l0"/><path d="M455.2,246.0 L496.8,270.0" stroke="#2E2E3A" stroke-width="5" stroke-linecap="round"/><circle cx="505.4" cy="275.0" r="1.6" class="led l1"/><path d="M455.2,228.0 L496.8,252.0" stroke="#2E2E3A" stroke-width="5" stroke-linecap="round"/><circle cx="505.4" cy="257.0" r="1.6" class="led l2"/><path d="M455.2,210.0 L496.8,234.0" stroke="#2E2E3A" stroke-width="5" stroke-linecap="round"/><circle cx="505.4" cy="239.0" r="1.6" class="led l0"/><path d="M455.2,192.0 L496.8,216.0" stroke="#2E2E3A" stroke-width="5" stroke-linecap="round"/><circle cx="505.4" cy="221.0" r="1.6" class="led l1"/><path d="M455.2,174.0 L496.8,198.0" stroke="#2E2E3A" stroke-width="5" stroke-linecap="round"/><circle cx="505.4" cy="203.0" r="1.6" class="led l2"/></g>
+  <g class="float"><polygon points="593.8,182.0 715.0,252.0 715.0,232.0 593.8,162.0" fill="url(#gLeft)" stroke="#2B2B36" stroke-width="0.8" opacity="1"/>
+<polygon points="836.2,182.0 715.0,252.0 715.0,232.0 836.2,162.0" fill="url(#gRight)" stroke="#2B2B36" stroke-width="0.8" opacity="1"/>
+<polygon points="715.0,92.0 836.2,162.0 715.0,232.0 593.8,162.0" fill="url(#gTop)" stroke="#3A3A48" stroke-width="0.8"/>
+<path d="M715.0,252.0 L715.0,232.0" stroke="#4A4A5C" stroke-width="0.8"/><polygon points="614.5,152.0 715.0,210.0 715.0,196.0 614.5,138.0" fill="url(#gLeft)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="815.5,152.0 715.0,210.0 715.0,196.0 815.5,138.0" fill="url(#gRight)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="715.0,80.0 815.5,138.0 715.0,196.0 614.5,138.0" fill="url(#gTop)" stroke="#3A3A48" stroke-width="0.8"/>
+<path d="M715.0,210.0 L715.0,196.0" stroke="#4A4A5C" stroke-width="0.8"/>
+<path d="M614.5,138.0 L715.0,80.0 L815.5,138.0" fill="none" stroke="#8B6CFF" stroke-width="1.4" stroke-linecap="round" filter="url(#glow)" class="rim"/>
+<path d="M815.5,138.0 L815.5,149.9" fill="none" stroke="url(#gRimV)" stroke-width="1.2"/><polygon points="638.8,130.0 715.0,174.0 715.0,162.0 638.8,118.0" fill="url(#gLeft)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="791.2,130.0 715.0,174.0 715.0,162.0 791.2,118.0" fill="url(#gRight)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="715.0,74.0 791.2,118.0 715.0,162.0 638.8,118.0" fill="url(#gTopV)" stroke="#3A3A48" stroke-width="0.8"/>
+<path d="M715.0,174.0 L715.0,162.0" stroke="#4A4A5C" stroke-width="0.8"/>
+<path d="M638.8,118.0 L715.0,74.0 L791.2,118.0" fill="none" stroke="#8B6CFF" stroke-width="1.4" stroke-linecap="round" filter="url(#glow)" class="rim"/>
+<path d="M791.2,118.0 L791.2,128.2" fill="none" stroke="url(#gRimV)" stroke-width="1.2"/><path d="M715.0,112.0 L715.0,102.0" stroke="#4A4A5C" stroke-width="2"/><path d="M801.6,162.0 L801.6,152.0" stroke="#4A4A5C" stroke-width="2"/><path d="M715.0,212.0 L715.0,202.0" stroke="#4A4A5C" stroke-width="2"/><path d="M628.4,162.0 L628.4,152.0" stroke="#4A4A5C" stroke-width="2"/><polygon points="715.0,84.0 722.8,88.5 715.0,93.0 707.2,88.5" class="cell c0"/><polygon points="702.9,91.0 710.7,95.5 702.9,100.0 695.1,95.5" class="cell c2"/><polygon points="690.8,98.0 698.5,102.5 690.8,107.0 683.0,102.5" class="cell c4"/><polygon points="678.6,105.0 686.4,109.5 678.6,114.0 670.8,109.5" class="cell c1"/><polygon points="666.5,112.0 674.3,116.5 666.5,121.0 658.7,116.5" class="cell c3"/><polygon points="727.1,91.0 734.9,95.5 727.1,100.0 719.3,95.5" class="cell c3"/><polygon points="715.0,98.0 722.8,102.5 715.0,107.0 707.2,102.5" class="cell c0"/><polygon points="702.9,105.0 710.7,109.5 702.9,114.0 695.1,109.5" class="cell c2"/><polygon points="690.8,112.0 698.5,116.5 690.8,121.0 683.0,116.5" class="cell c4"/><polygon points="678.6,119.0 686.4,123.5 678.6,128.0 670.8,123.5" class="cell c1"/><polygon points="739.2,98.0 747.0,102.5 739.2,107.0 731.5,102.5" class="cell c1"/><polygon points="727.1,105.0 734.9,109.5 727.1,114.0 719.3,109.5" class="cell c3"/><polygon points="715.0,112.0 722.8,116.5 715.0,121.0 707.2,116.5" class="cell c0"/><polygon points="702.9,119.0 710.7,123.5 702.9,128.0 695.1,123.5" class="cell c2"/><polygon points="690.8,126.0 698.5,130.5 690.8,135.0 683.0,130.5" class="cell c4"/><polygon points="751.4,105.0 759.2,109.5 751.4,114.0 743.6,109.5" class="cell c4"/><polygon points="739.2,112.0 747.0,116.5 739.2,121.0 731.5,116.5" class="cell c1"/><polygon points="727.1,119.0 734.9,123.5 727.1,128.0 719.3,123.5" class="cell c3"/><polygon points="715.0,126.0 722.8,130.5 715.0,135.0 707.2,130.5" class="cell c0"/><polygon points="702.9,133.0 710.7,137.5 702.9,142.0 695.1,137.5" class="cell c2"/><polygon points="763.5,112.0 771.3,116.5 763.5,121.0 755.7,116.5" class="cell c2"/><polygon points="751.4,119.0 759.2,123.5 751.4,128.0 743.6,123.5" class="cell c4"/><polygon points="739.2,126.0 747.0,130.5 739.2,135.0 731.5,130.5" class="cell c1"/><polygon points="727.1,133.0 734.9,137.5 727.1,142.0 719.3,137.5" class="cell c3"/><polygon points="715.0,140.0 722.8,144.5 715.0,149.0 707.2,144.5" class="cell c0"/></g>
+  <g class="float2"><polygon points="810.3,287.0 888.2,332.0 888.2,286.0 810.3,241.0" fill="url(#gLeft)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="966.1,287.0 888.2,332.0 888.2,286.0 966.1,241.0" fill="url(#gRight)" stroke="#2B2B36" stroke-width="0.8" opacity="1.0"/>
+<polygon points="888.2,196.0 966.1,241.0 888.2,286.0 810.3,241.0" fill="url(#gTop)" stroke="#3A3A48" stroke-width="0.8"/>
+<path d="M888.2,332.0 L888.2,286.0" stroke="#4A4A5C" stroke-width="0.8"/>
+<path d="M810.3,241.0 L888.2,196.0 L966.1,241.0" fill="none" stroke="#8B6CFF" stroke-width="1.4" stroke-linecap="round" filter="url(#glow)" class="rim"/>
+<path d="M966.1,241.0 L966.1,280.1" fill="none" stroke="url(#gRimV)" stroke-width="1.2"/>
+    <g transform="translate(888.2,241.0)">
+      <ellipse cx="0" cy="0" rx="34" ry="19.6" fill="#101015" stroke="#3A3A48"/>
+      <path d="M-34,0 L-34,-10 A34,19.6 0 0 1 34,-10 L34,0 A34,19.6 0 0 1 -34,0 Z" fill="#1C1C24"/>
+      <ellipse cx="0" cy="-10" rx="34" ry="19.6" fill="url(#gTop)" stroke="#8B6CFF" stroke-opacity=".7" stroke-width="1.2" filter="url(#glow)"/>
+      <ellipse cx="0" cy="-10" rx="22" ry="12.7" fill="#08080B" stroke="#3A3A48"/>
+      <ellipse cx="0" cy="-10" rx="13" ry="7.5" fill="url(#gLens)"/>
+      <ellipse cx="-5" cy="-13" rx="4" ry="2.2" fill="#F0EFF7" opacity=".55"/>
+      <ellipse cx="0" cy="-10" rx="13" ry="7.5" fill="none" stroke="#72D7E8" stroke-opacity=".35" class="scan"/>
+    </g></g>
+  <g><path d="M481.2,147.0 L391.2,157.0 L377.2,157.0" stroke="#A2A0B3" stroke-opacity=".35" fill="none"/><circle cx="481.2" cy="147.0" r="2" fill="#8B6CFF"/><text x="371.2" y="161.0" text-anchor="end" class="label">INFRA</text><path d="M779.1,125.0 L909.1,117.0 L923.1,117.0" stroke="#A2A0B3" stroke-opacity=".35" fill="none"/><circle cx="779.1" cy="125.0" r="2" fill="#8B6CFF"/><text x="929.1" y="121.0" text-anchor="start" class="label">BACKEND · AI</text><path d="M922.8,282.0 L982.8,312.0 L996.8,312.0" stroke="#A2A0B3" stroke-opacity=".35" fill="none"/><circle cx="922.8" cy="282.0" r="2" fill="#8B6CFF"/><text x="1002.8" y="316.0" text-anchor="start" class="label">VISION · EDGE</text></g>
+  <g><circle cx="330" cy="120" r="1.2" class="dust d0"/><circle cx="460" cy="70" r="0.9" class="dust d1"/><circle cx="900" cy="90" r="1.1" class="dust d2"/><circle cx="1010" cy="210" r="0.8" class="dust d3"/><circle cx="800" cy="330" r="1.0" class="dust d0"/><circle cx="420" cy="300" r="0.9" class="dust d1"/><circle cx="610" cy="60" r="0.7" class="dust d2"/><circle cx="1080" cy="120" r="0.9" class="dust d3"/></g>
+  <rect width="1200" height="420" fill="url(#gVignette)"/>
+  <text x="44" y="56" class="label"><tspan style="fill:#8B6CFF">●</tspan>  MH—S / SYSTEMS</text>
+  <text x="44" y="382" class="label">SOFTWARE  ·  INFRASTRUCTURE  ·  INTELLIGENT SYSTEMS</text>
+  <text x="1156" y="56" text-anchor="end" class="label">v.2026</text>
+  <rect x=".5" y=".5" width="1199" height="419" rx="18" fill="none" stroke="#FFFFFF" stroke-opacity=".06"/>
+</g>
+</svg>

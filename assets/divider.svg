@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="12" viewBox="0 0 1200 12" role="presentation">
+<defs>
+  <linearGradient id="g" x1="0" x2="1">
+    <stop offset="0" stop-color="#A2A0B3" stop-opacity="0"/><stop offset=".5" stop-color="#8B6CFF"/><stop offset="1" stop-color="#A2A0B3" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<style>.p { animation: p 6s ease-in-out infinite; } @keyframes p { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .p { animation: none; } }</style>
+<rect y="5.5" width="1200" height="1" fill="url(#g)" class="p"/>
+<rect x="597.0" y="3" width="6" height="6" transform="rotate(45 600.0 6)" fill="#8B6CFF"/>
+</svg>
